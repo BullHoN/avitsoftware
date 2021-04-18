@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --primaryColor: #02203C; 
+    --secondaryColor: #FEC83B;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    background: var(--primaryColor);
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-logo {
+    height: 10vh;
+}
+
+#comming-soon {
+    height: 80vh;
+    display: flex;
+}
+
+#soon-banner {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#soon-banner > img {
+    object-fit: cover;
+}
+
+
+#contact {
+    width: 50%;
+    height: 80vh;
+    background: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-data {
+    width: 60%;
+    text-align: center;
+}
+
+#heading {
+    margin-top: 4px;
+    font-size: 32px;
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+.contact-box {
+    margin-top: 24px;
+    background: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact-box p {
+    color: white;
+    width: 100%;
+    font-size: 24px;
+}
+
+.contact-box img {
+    width: 45px;
+    height: 45px;
+}
+
+.contact-box > div {
+    width: 100px;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.small {
+    width: 40%;
+    padding: 10px 5px 10px 5px;
+}
+
+.small img {
+    width: 25px;
+    height: 25px;
+}
+
+.small p {
+    font-size: 16px;
+}
+
+.small > div {
+    width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    #comming-soon{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #soon-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact {
+        width: 100%;
+        padding: 5vh 0px 5vh 0px;
+        height: auto;
+    }
+
+    #contact-data{
+        width: 80%;
+    }
+
+    .contact-box p{
+        font-size: 16px;
+    }
+
+    .contact-box img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact-box > div {
+        width: 75px;
+    }
+
+    .small {
+        padding: 10px 10px 10px 10px;
+    }    
+
+    .small img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .small > div {
+        width: 30px;
+        border: none;
+    }
+
+    .small p{
+        font-size: 12px;
+    }   
+
+}
