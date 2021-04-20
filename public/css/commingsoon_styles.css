@@ -27,13 +27,13 @@ nav{
 }
 
 #comming-soon {
-    height: 80vh;
+    height: 90vh;
     display: flex;
 }
 
 #soon-banner {
     width: 50%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ nav{
 
 #contact {
     width: 50%;
-    height: 80vh;
+    height: 90vh;
     background: var(--secondaryColor);
     display: flex;
     justify-content: center;
